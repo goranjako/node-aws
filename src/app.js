@@ -12,10 +12,10 @@ import mongoSanitize from "express-mongo-sanitize";
 import dotenv from "dotenv";
 import { notFound, errorHandler } from "./util/errorHandler";
 import setRoutes from "./routes";
-//import { connectDB } from "./config/db";
+import { connectDB } from "./config/db";
 const app = express();
 dotenv.config();
-//connectDB();
+connectDB();
 // enable cors
 const corsOption = {
   origin: true,
