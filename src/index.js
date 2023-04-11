@@ -6,7 +6,7 @@ dotenv.config();
 /**
  * Get port from environment and store in Express.
  */
-const port = process.env.Port||3006;
+const port = process.env.Port||3000;
 app.set('port', port);
 /**
  * Create HTTP server.
